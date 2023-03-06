@@ -32,9 +32,10 @@ class MoonWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
       width: size,
       height: size,
+      alignment: Alignment.center,
       child: Transform.scale(
         scale: size / (resolution * 2),
         child: CustomPaint(
